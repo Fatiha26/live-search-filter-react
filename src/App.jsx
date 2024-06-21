@@ -7,6 +7,7 @@ import Error from './Error';
 import Navbar from './Navbar';
 import './index.css';
 import Search from './Search';
+import Home from './Home';
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
         <>
         <Navbar />
         <Routes>
+            <Route exact path="/" Component={()=> <Home name="Home"/>}/>
             <Route exact path="/about" Component={()=> <About name="About"/>}/>
             <Route path="/contact" Component={()=> <Contact name="Contact"/>}/>
             <Route path="/service" Component={()=> <Service name="Service"/>} />
