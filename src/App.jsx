@@ -6,6 +6,7 @@ import Service from './Service';
 import Error from './Error';
 import Navbar from './Navbar';
 import './index.css';
+import Search from './Search';
 
 const App = () => {
 
@@ -16,7 +17,7 @@ const App = () => {
             <Route exact path="/about" Component={()=> <About name="About"/>}/>
             <Route path="/contact" Component={()=> <Contact name="Contact"/>}/>
             <Route path="/service" Component={()=> <Service name="Service"/>} />
-
+            <Route path="/search" Component={()=> <Search name="Search"/>} />
             <Route path='*' Component={Error}/>
         </Routes>
         </>
